@@ -14,8 +14,49 @@
     --accent-text: #2196F3;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul,ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: 1px solid red;
+}
+
 .list {
     list-style: none;
+}
+
+.link {
+    text-decoration: none;
 }
 
 body {
@@ -27,7 +68,13 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Logo */
+/* -----------------------------HEADER---------------------------- */
+.header {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .logo {
     color: var(--header-color);
     text-decoration: none;
@@ -81,10 +128,14 @@ body {
     color: var(--accent-text);
 }
 
-/* секция герой */
+/* -------------------------------HERO---------------------------- */
 
 .section-hero {
     background-color: var(--secondary-bgc);
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 h1 {
@@ -96,24 +147,37 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 button {
+    display:inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
     background-color: var(--accent-text);
     color: var(--bgc);
-    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
 
-/* секция особенности */
+/* --------------------FEATURES--------------------------- */
+
+.features {
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+
 
 .title {
     color: var(--header-color);
@@ -122,10 +186,17 @@ button {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-/* секция о работе */
 
+/* -----------------------WORK------------------------------- */
+
+.work {
+    margin: 0 auto;
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
 .main-title {
     color: var(--header-color);
 
@@ -133,6 +204,8 @@ button {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 .list p {
@@ -141,15 +214,28 @@ button {
     line-height: 1.7;
 }
 
-/* секция команды */
+/* --------------------------TEAM---------------------------------- */
 
 .team {
     background-color: var(--bgc-accent);
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.team-list li {
-    background-color: var(--bgc);
+.main-title {
+    margin-bottom: 50px;
 }
+
+.caption {
+    background-color: var(--bgc);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 270px;
+    height: 130px;
+    text-align: center;
+}
+
 
 .team-title {
     color: var(--header-color);
@@ -157,6 +243,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
 }
 
 .team p {
@@ -168,13 +255,23 @@ button {
     text-decoration: none;
 }
 
-/* секция подвал */
+/* ----------------------------FOOTER---------------------------- */
+
  footer {
      background-color: var(--secondary-bgc);
+     margin: 0 auto;
+     padding-top: 60px;
+     padding-bottom: 60px;
+
  }
 
  .footer-logo {
      color: var(--bgc);
+     margin-bottom: 20px;
+ }
+
+ .footer-item {
+     margin-bottom: 9px;
  }
 
 .contacts-list {
@@ -199,10 +296,17 @@ button {
     color: var(--accent-text);
 }
 
-/* Страница портфолио */
+
+/* -------------------------PORTGOLIO-PAGE----------------------------- */
 
  
-/* Фильтры */
+/* -----------------------------FILTERS------------------------------ */
+
+.portfolio {
+    margin: 0 auto;
+    padding-top: 94px;
+    margin-bottom: 94px;
+}
 
 li button {
     background-color: var(--bgc-accent);
@@ -219,7 +323,7 @@ li button:focus {
     color: var(--bgc);
 }
 
-/* Список проектов */
+/* -------------------------------PROJECTS----------------------- */
 
 li h2 {
     color: var(--header-color);
@@ -236,4 +340,15 @@ li p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+}
+
+.caption-portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    width: 370px;
+    height: 110px;
+}
+.portfolio-title {
+    margin-bottom: 4px;
 }
