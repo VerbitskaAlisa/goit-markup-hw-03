@@ -14,8 +14,20 @@
     --accent-text: #2196F3;
 }
 
-.list {
-    list-style: none;
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul,ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
 }
 
 body {
@@ -27,15 +39,63 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Logo */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* ------------------------------------HEADER------------------------------------ */
+.main-header {
+    display: flex;
+
+    align-items: center;
+}
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-nav {
+    display: flex;
+
+    align-items: center;
+}
+
 .logo {
     color: var(--header-color);
-    text-decoration: none;
 
     font-family: Raleway,sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.7;
+
+    margin-right: 93px;
+    
+
     }
 
 .logo .first-word {
@@ -44,9 +104,16 @@ body {
 
 /* site-nav */
 
+.site-nav {
+    display: flex;
+} 
+
+.site-nav > li:not( :last-child) {
+    margin-right: 50px;
+}
+
 .site-nav a {
     color: var(--header-color);
-    text-decoration: none;
 
     font-weight: 500;
     line-height: 16px;
@@ -67,6 +134,11 @@ body {
 }
 /* contacts */
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .contacts a {
     color: var(--text-color);
     text-decoration: none;
@@ -81,10 +153,27 @@ body {
     color: var(--accent-text);
 }
 
-/* секция герой */
+.contacts > .contact-item:not( :last-child) {
+    margin-right: 50px;
+}
+
+.item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* ------------------------------------СЕКЦИЯ ГЕРОЙ-------------------------------- */
+
 
 .section-hero {
     background-color: var(--secondary-bgc);
+}
+
+.hero-content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    text-align: center;
 }
 
 h1 {
@@ -93,27 +182,49 @@ h1 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 30px;
 }
 
 button {
+    display: inline-block;
+
+
     background-color: var(--accent-text);
     color: var(--bgc);
-    cursor: pointer;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+    
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border: 0;
 }
 
-/* секция особенности */
+/* -------------------------ОСОБЕННОСТИ--------------------------- */
+
+.features-container {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .title {
     color: var(--header-color);
@@ -122,9 +233,19 @@ button {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-/* секция о работе */
+
+
+
+/* -------------------------О РАБОТЕ--------------------------- */
+
+.work-container {
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
 
 .main-title {
     color: var(--header-color);
@@ -133,6 +254,16 @@ button {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .list p {
@@ -141,14 +272,33 @@ button {
     line-height: 1.7;
 }
 
-/* секция команды */
+/* -----------------------------СЕКЦИЯ О КОМАНДЕ---------------------------- */
+
+.team-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .team {
     background-color: var(--bgc-accent);
 }
 
-.team-list li {
+.team-list {
+    display: flex;
+}
+
+.text-item {
+    width: 270px;
+
     background-color: var(--bgc);
+    padding-top: 30px;
+    padding-bottom: 30px;   
+    text-align: center;
+
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-title {
@@ -157,6 +307,8 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
+    margin-bottom: 10px;
 }
 
 .team p {
@@ -168,20 +320,39 @@ button {
     text-decoration: none;
 }
 
-/* секция подвал */
+/* -------------------------------------FOOTER-------------------------------------- */
+
+
  footer {
      background-color: var(--secondary-bgc);
+ }
+
+
+ .footer-container {
+     padding-top: 60px;
+     padding-bottom: 60px;
  }
 
  .footer-logo {
      color: var(--bgc);
  }
 
+ .footer-item > a {
+     margin-bottom: 8px;
+ }
+
+ .footer-item > a:not(:last-child) {
+     margin-bottom: 0;
+ } 
+
 .contacts-list {
 
     font-weight: 400;
     line-height: 1.7;
+
+    margin-top: 20px;
 }
+
 
 .contacts-list .fact-address {
     color: var(--bgc);
@@ -199,27 +370,71 @@ button {
     color: var(--accent-text);
 }
 
-/* Страница портфолио */
+
+/* --------------------------------------------СТРАНИЦА ПОРТФОЛИО------------------------------------ */
 
  
 /* Фильтры */
 
-li button {
+.buttons-container {
+    padding-top: 94px;
+    padding-bottom: 34px;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button-item button {
+    display: block;
     background-color: var(--bgc-accent);
     color: var(--header-color);
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    border-radius: 4px;
+
+    min-width: 73px;
+    padding: 6px 22px;
 }
 
-li button:hover,
-li button:focus {
+.button-item button:hover,
+.button-item button:focus {
     background-color: var(--accent-text);
     color: var(--bgc);
 }
 
 /* Список проектов */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.project-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-text {
+    padding: 20px 24px;
+
+    width: 370px;
+}
 
 li h2 {
     color: var(--header-color);
@@ -237,3 +452,4 @@ li p {
     font-size: 16px;
     line-height: 1.87;
 }
+
