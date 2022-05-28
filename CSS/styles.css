@@ -179,12 +179,15 @@ body {
 h1 {
     color: var(--bgc);
 
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 
@@ -373,7 +376,11 @@ button {
 
 /* --------------------------------------------СТРАНИЦА ПОРТФОЛИО------------------------------------ */
 
- 
+.header-portfolio {
+    border-bottom: 1px solid #EEEEEE;
+} 
+
+
 /* Фильтры */
 
 .buttons-container {
@@ -412,6 +419,11 @@ button {
 
 /* Список проектов */
 
+.projects-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .project-list {
     display: flex;
     flex-wrap: wrap;
@@ -434,6 +446,8 @@ button {
     padding: 20px 24px;
 
     width: 370px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
 }
 
 li h2 {
