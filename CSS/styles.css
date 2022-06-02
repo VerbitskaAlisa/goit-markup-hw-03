@@ -337,6 +337,7 @@ letter-spacing: 0.03em;
  }
 
  .footer-logo {
+     display: block;
      color: var(--bgc);
 
     font-family: Raleway,
@@ -347,6 +348,15 @@ letter-spacing: 0.03em;
 
     margin-bottom: 20px;
     }
+
+.footer-item {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
+}
 
 .first-word {
     color: var(--accent-text);
