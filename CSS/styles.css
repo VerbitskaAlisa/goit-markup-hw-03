@@ -224,7 +224,6 @@ button {
 
 .features-item {
     width: calc((100% - 90px) / 4);
-    height: 101px;
     margin-right: 30px;
 }
 
@@ -339,22 +338,26 @@ letter-spacing: 0.03em;
 
  .footer-logo {
      color: var(--bgc);
- }
 
- .footer-item > a {
-     margin-bottom: 9px;
- }
+    font-family: Raleway,
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.7;
 
- .footer-item > a:not(:last-child) {
-     margin-bottom: 0;
- } 
+    margin-bottom: 20px;
+    }
+
+.first-word {
+    color: var(--accent-text);
+}
+ 
+
 
 .contacts-list {
 
     font-weight: 400;
     line-height: 1.7;
-
-    margin-top: 20px;
 }
 
 
@@ -381,21 +384,25 @@ letter-spacing: 0.03em;
     border-bottom: 1px solid #EEEEEE;
 } 
 
-
 /* Фильтры */
 
-.buttons-container {
+.section-main {
     padding-top: 94px;
-    padding-bottom: 34px;
+    padding-bottom: 94px;
 }
 
 .buttons-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-.button-item:not(:last-child) {
+.button-item {
     margin-right: 8px;
+}
+
+.button-item:last-child {
+    margin-right: 0;
 }
 
 .button-item button {
@@ -409,13 +416,9 @@ letter-spacing: 0.03em;
     border-radius: 4px;
 
     min-width: 73px;
-    margin-right: 8px;
     padding: 6px 22px;
 }
 
-.button-item button:nth-child (:last-child) {
-    margin-right: 0;
-}
 
 .button-item button:hover,
 .button-item button:focus {
